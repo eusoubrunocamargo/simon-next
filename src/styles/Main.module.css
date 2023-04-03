@@ -1,0 +1,73 @@
+.containerGeralMain {
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+    max-width: 60rem;
+    min-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.containerGeralMain button {
+    width: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    font-size: larger;
+}
+
+.blink1 {
+    animation: blink-sequence 3s infinite both;
+    animation-delay: 0s;
+}
+  
+.blink2 {
+    animation: blink-sequence 3s infinite both;
+    animation-delay: .5s;
+}
+  
+.blink3 {
+    animation: blink-sequence 3s infinite both;
+    animation-delay: 1s;
+}
+  
+.blink4 {
+    animation: blink-sequence 3s infinite both;
+    animation-delay: 1.5s;
+}
+  
+@keyframes blink-sequence {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    100% {opacity: 0}
+}
+
+.containerGameLogo {
+    display: flex;
+    gap: 1rem;
+}
+
+.greenBar {
+    height: 20rem;
+    width: 3rem;
+    background-color: #8ac926;
+}
+.blueBar {
+    height: 20rem;
+    width: 3rem;
+    background-color: #1982c4;
+}
+.redBar {
+    height: 20rem;
+    width: 3rem;
+    background-color: #ff595e;
+}
+.yellowBar {
+    height: 20rem;
+    width: 3rem;
+    background-color: #ffca3a;
+}

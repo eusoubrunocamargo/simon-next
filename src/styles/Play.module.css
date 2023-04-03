@@ -1,0 +1,113 @@
+.containerGame {
+    background-color: #363636;
+    width: 100vw;
+    height: 100vh;
+    min-width: 30rem;
+    max-width: 60rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    grid-gap: 1rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.youlose {
+    animation: youlose 3s ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes youlose {
+    0% {filter: grayscale(0)}
+    25% {filter: grayscale(0.5)}
+    100% {filter: grayscale(1)}
+}
+
+.containerGeral {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.btnStart {
+    color: white;
+    width: 20rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+
+.btnExit {
+    color: white;
+    font-weight: bold;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.1rem white;
+}
+
+.gameInfo {
+    position: absolute;
+    width: 80%;
+    height: auto;
+    bottom: 10%;
+    background: rgba(65, 65, 65, 1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameStatus {
+    position: absolute;
+    width: 80%;
+    max-width: 33rem;
+    height: 10rem;
+    background-color: black;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.gameStatus span {
+    grid-column: 1/span2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameStatus button {
+    border: solid 0.1rem white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.gameStatus button:first-of-type {
+    grid-column: 1;
+}
+
+.gameStatus button:last-of-type {
+    grid-column: 2;
+}
+
+
+

@@ -1,0 +1,42 @@
+.simonButton {
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset -8px 0px 2px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset -8px 0px 2px 1px rgba(0,0,0,0.3);
+    box-shadow: inset -8px 0px 2px 1px rgba(0,0,0,0.3);
+    transition: 0.1s;
+}
+
+.simonButton[disabled]{
+    pointer-events: none;
+}
+
+.activated {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+    pointer-events: none;
+    -webkit-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.3);
+}
+
+.green {
+    background-color: #8ac926;
+    grid-column: 1;
+}
+
+.blue {
+    background-color: #1982c4;
+    grid-column: 2;
+}
+
+.red {
+    background-color: #ff595e;
+    grid-column: 3;
+}
+
+.yellow {
+    background-color: #ffca3a;
+    display: grid;
+    grid-column: 4;
+}
